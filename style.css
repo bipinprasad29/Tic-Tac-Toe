@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body{
+        background-color: rgb(31, 33, 34);
+    }
+    .head {
+        font-family: sans-serif;
+        font-size: 24px;
+        margin: 20px auto;
+        text-align: center;
+        color: rgb(184, 184, 187);
+    }
+
+    .container {
+        display: grid;
+        grid-template-rows: repeat(3, 10vw);
+        grid-template-columns: repeat(3, 10vw);
+        justify-content: center;
+    }
+
+    .box {
+        width: 10vw;
+        height: 10vw;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(31, 5, 126, 0.74);
+    }
+
+    .box:hover {
+        background-color: rgba(21, 24, 24, 0.2);
+    }
+
+    .bb {
+        border-bottom: 0;
+    }
+
+    .bt {
+        border-top: 0;
+    }
+
+    .bl {
+        border-left: 0;
+    }
+
+    .br {
+        border-right: 0;
+    }
+
+  #winner,
+    #player {
+        width: 50vw;
+        margin: 10px auto;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+
+    #winner {
+        text-align: center;
+        margin: auto;
+        display: none;
+        animation: winner 1s ease infinite;
+    }
+
+    @keyframes winner {
+        0% {
+            transform: scale(1, 1);
+        }
+
+        50% {
+            transform: scale(1.5, 1.5);
+        }
+
+        100% {
+            transform: scale(1, 1);
+        }
+    }
+
+    .boxtext {
+        font-size: 8vw;
+        text-align: center;
+        color: black;
+    }
+
+    #reset{
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: bisque;
+    text-align: center;
+    background-color: rgb(28, 162, 224);
+    margin: auto;
+    }
+
+    #reset:hover{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(3, 29, 41);
+    cursor: pointer;
+    }
